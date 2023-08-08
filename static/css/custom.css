@@ -1,8 +1,8 @@
 /* -- general -- */
 html, body {
   height: 100%;
-  color: #5c5962;
-  background-color: #f5f6fa;
+  color: #fff;
+  background-color: #000;
   font-family: -apple-system, BlinkMacSystemFont, "helvetica neue",
                helvetica, roboto, noto, "segoe ui", arial, sans-serif;
   font-size: 16px !important;
@@ -16,7 +16,7 @@ b {
 h1 {
   text-align: center;
   font-weight: normal;
-  color: #27262b;
+  color: #fff;
 }
 hr {
   margin: 25px;
@@ -58,10 +58,13 @@ hr {
 .quote {
   padding: 5px 0px;
   padding-bottom: 10px;
-  background: #eee;
+  color: #000;
+  background: #32d7d2;
   width: 100%;
-  border-radius: 10px;
   text-align: left;
+}
+.logo {
+  max-width: 100px;
 }
 
 /* --- icon --- */
@@ -93,53 +96,16 @@ hr {
   margin: 0;
   display: block;
   color: #fff;
-  background-color: #7289da;
-  border-width: 0px;
-  border-radius: 10px;
+  /* background-color: #f00; */
+  border: 1px solid #fff;
   font-weight: 700;
 }
 #btn-discord:hover {
-  background-color: #677bc4;
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
 }
 #btn-discord:active {
   padding: 16px 0px 14px;
-  background-color: #5b6eae;
 }
 #btn-discord:focus { outline: 0; }
-
-/* --- github --- */
-.github-corner {
-  position: absolute;
-  top: 0;
-  border: 0;
-  right: 0;
-  display: inline-block;
-  z-index: 1;
-}
-.github-corner span {
-  display: inline-block;
-}
-.github-corner span svg {
-  fill: #151513;
-  color:#fff;
-  z-index: -1
-}
-.github-corner:hover span .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
-  border: none;
-}
-@keyframes octocat-wave {
-  0%, 100% { transform: rotate(0) }
-  20%, 60% { transform: rotate(-25deg) }
-  40%, 80% { transform: rotate(10deg) }
-}
-@media (max-width:500px) {
-  .github-corner:hover span.octo-arm {
-    animation: none;
-    border: none;
-  }
-  .github-corner span .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-    border: none;
-  }
-}
